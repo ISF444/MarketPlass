@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Продукты</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<header>
+    <h1>Привет ты в разделе продукты</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="{% url 'all' %}">Все товары всех кат</a></li>
+        {% for cat in categories %}
+        <li><a href="{% url 'johan' cat.id %}">{{cat.name}}</a></li>
+        {% endfor %}
+    </ul>
+</nav>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="text" placeholder="введите логин" name="login" required><br>
+    <input type="password" placeholder="введите пароль" name="password" required><br>
+    <button>login</button>
+</form>
+<p>{{ pers }}</p>
+<div>
+    {% for p in per %}
+    <p>{{p.login}} - {{p.password}}</p>
+    {% endfor %}
+</div>
+<main>
+    {% for prod in products %}
+        <div class="card">
+            <img src="{{prod.image.url}}" alt="">
+            <p>{{prod.title}}</p>
+            <p>{{prod.description}}</p>
+            <p>{{prod.price}}</p>
+
+        </div>
+    {% endfor %}
+</main>
+</body>
+</html>

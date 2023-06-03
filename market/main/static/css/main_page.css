@@ -1,0 +1,26 @@
+body{
+    background: green;
+}
+
+.header_johana{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    background: violet;
+    border: 3px solid red;
+}
+
+main{
+     width: 80%;
+     height: 500px;
+     background: yellow;
+     margin: 20px auto;
+}
+
+#footer{
+     width: 80%;
+     height: 200px;
+     background: black;
+     color: grey;
+     margin: 20px auto;
+}

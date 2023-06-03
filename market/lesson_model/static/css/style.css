@@ -1,0 +1,90 @@
+body{
+    background: gray;
+}
+header{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    background: blue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 80%;
+    height: 40px;
+    margin: 0 auto 20px;
+    background: green;
+    color: black;
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+a:hover{
+    color: yellow;
+    background: red;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    background: #f1ecec;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.card{
+    width: 300px;
+    height: 450px;
+    border: 1px solid yellow;
+    background: #7fbf3b;
+    border-radius: 5px;
+}
+main{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 15px;
+    justify-content: space-around;
+
+}
+form{
+    width: 300px;
+    margin: 0 auto;
+}
+form input{
+    width: 300px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+form button{
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    background: #378c21;
+    margin: 0 auto;
+    display: block;
+    color: black;
+    border-radius: 8px;
+    border: none;
+}
+form button:hover{
+    background: #008000;
+    transition: 0.3s linear all;
+}
+img{
+    width: 100%;
+    height: 50%;
+    box-shadow: -19px 0 22px -19px #000;
+}
